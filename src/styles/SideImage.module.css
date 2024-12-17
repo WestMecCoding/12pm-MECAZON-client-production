@@ -1,0 +1,14 @@
+.wrapper {
+    width: 50vw;
+    height: 82.5vh;
+
+    background-color: black;
+}
+.image {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../components/image.png);
+    background-position: center;
+    background-size: 100%;
+}

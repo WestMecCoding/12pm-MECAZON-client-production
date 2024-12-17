@@ -1,0 +1,11 @@
+input {
+  width: 100vw;
+  height: 2.5%;
+  padding: 2%;
+  margin: 5vw;
+  border-radius: 40px;
+}
+
+input:hover {
+  filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 1));
+}

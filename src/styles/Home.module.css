@@ -1,0 +1,169 @@
+.layoutContainer {
+    display: flex; 
+    gap: 20px;
+    align-items: flex-start; 
+    max-width:100%;
+    overflow-x: hidden;
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Big div takes 2 parts, smaller divs 1 part */
+    grid-template-rows: auto auto; /* Adjust rows automatically */
+    gap: 10px; 
+    background-color: #F78E11; 
+    padding: 20px;
+    width: 60%; 
+    margin:auto;
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+  
+  .bigDiv {
+    grid-column: 1 / 2; /* Spans the first column */
+    grid-row: 1 / 3; /* Spans two rows */
+    background-color: #fff;
+    padding: 20px;
+    margin:auto;
+    border-radius: 25px;
+  }
+  
+  .smallDiv {
+    background-color: #fff;
+    padding: 20px;
+    margin:auto;
+    border-radius: 25px;
+  }
+  
+  .smallDiv:nth-child(2) {
+    grid-column: 2 / 3; 
+    grid-row: 1 / 2; 
+  }
+  
+  .smallDiv:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; 
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column; 
+    gap:10px;
+    background-color: #508AA5;
+    padding: 20px;
+    width: 30%; 
+    margin:auto;
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+  
+  .sidebarItem {
+    background-color: #fff;
+    margin-bottom: 10px; 
+    padding: 15px;
+    text-align: center;
+    border-radius: 25px;
+    margin:auto;
+  }
+  
+  #exOne {
+    border: 5px solid black;
+    width:500px;
+    height:500px;
+    border-radius: 25px;
+  }
+  
+  .exTwo {
+    border: 5px solid black;
+    border-radius: 25px;
+    width:250px;
+    height:250px;
+  }
+  
+  .exThree {
+    border: 5px solid black;
+    border-radius: 25px;
+    width:100px;
+    height:100px;
+  }
+  
+  /* Medium screens (tablets, 768px and up) */
+  @media (max-width: 1024px) {
+    .layoutContainer {
+      flex-direction: column; 
+    }
+  
+    .gridContainer {
+      width: 90%; 
+      grid-template-columns: 2fr 1fr; 
+      grid-template-rows: auto auto; 
+      padding: 10px;
+      margin:auto;
+      overflow-x:hidden;
+    }
+  
+    .sidebar {
+      flex-direction: row;
+      gap: 10px; 
+      width: 90%; 
+      /* overflow:hidden; */
+      margin:auto;
+    }
+  
+    .sidebarItem {
+      flex: 1 1 calc(33.33% - 50px); /* Make items flexible with a max width */
+      margin-bottom: 0; 
+      overflow:hidden;
+    }
+    .exTwo {
+      border: 5px solid black;
+      width:50px;
+      height:50px;
+    }
+  }
+  
+  /* Small screens (phones, 480px and up) */
+  @media (max-width: 768px) {
+    .layoutContainer {
+      flex-direction: column; /* Stack everything vertically */
+      gap: 10px;
+      overflow:hidden;
+      margin:auto;
+    }
+  
+    .bigDiv {
+      display: block; 
+      width: 100%; 
+      padding: 20px;
+      margin: 0 auto; 
+    }
+    .smallDiv {
+      display:none;
+    }
+  
+    .sidebar {
+      display: flex;
+      flex-direction: row;
+      flex:wrap; 
+      width: 90%; 
+      padding: 10px; 
+      /* margin-top: 20px; */
+    }
+    .sidebarItem {
+        width:auto;
+        height:auto;
+    }
+
+    #exOne {
+      border: 5px solid black;
+      width:100%;
+      height:100px;
+      margin:auto;
+    }
+    .exThree {
+        overflow:hidden;
+        border: 1px solid black;
+        width:50px;
+        height:50px;
+    }
+  }

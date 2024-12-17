@@ -1,0 +1,11 @@
+.body {
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    margin-left: auto;
+}
+.image {
+    margin-left: auto;
+}

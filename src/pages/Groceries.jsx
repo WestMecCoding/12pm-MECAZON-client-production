@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import GroceryList from "../components/GroceryList";
+import styles from "../styles/GroceryList.module.css";
 import Modal from "../components/ItemDataModal";
 import { sortAscending, filterByCategory } from "../utils/groceryFunctions";
 import axios from "axios";
@@ -70,7 +71,7 @@ const handleCategoryFilter = (category) => {
         <option value="nuts">Nut Products</option>
         <option value="grains">Grain Products</option>
       </select>
-      <h1>Groceries</h1>
+      <h1 className={styles.header}>Result of Search:</h1>
       <SearchBar onSearch={handleSearch} />
       <GroceryList items={filteredGroceries} onItemClick={handleItemClick} />
       <Modal
