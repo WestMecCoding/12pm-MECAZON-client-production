@@ -39,23 +39,24 @@ export default function Groceries() {
     console.log(JSON.parse(sessionStorage.getItem("groceries")));
   }, [groceries]);
 
-  const handleSort = () => {
-    const sorted = sortAscending(groceries);
-    setFilteredGroceries(sorted);
-  };
-  const handleCategoryFilter = (category) => {
-    const filtered = filterByCategory(groceries, category);
-    setFilteredGroceries(filtered);
-  };
-  const handleItemClick = (item) => {
-    setSelectedItem(item);
-    setModalVisible(true);
-  };
 
-  const closeModal = () => {
-    setModalVisible(false);
-    setSelectedItem(null);
+const handleSort = () => {
+  const sorted = sortAscending(groceries);
+  setFilteredGroceries(sorted);
+};
+const handleCategoryFilter = (category) => {
+  const filtered = filterByCategory(groceries, category);
+  setFilteredGroceries(filtered);
   };
+   const handleItemClick = (item) => {
+     setSelectedItem(item);
+     setModalVisible(true);
+   };
+
+   const closeModal = () => {
+     setModalVisible(false);
+     setSelectedItem(null);
+   };
 
   return (
     <div>
