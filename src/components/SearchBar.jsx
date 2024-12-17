@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import GroceryList from "../components/GroceryList";
-import Modal from "../components/ItemDataModal";
 import { sortAscending, filterByCategory } from "../utils/groceryFunctions";
 import axios from "axios";
 import SearchBar from "../components/SearchBar";
@@ -8,8 +7,6 @@ import SearchBar from "../components/SearchBar";
 export default function Groceries() {
   const [groceries, setGroceries] = useState([]);
   const [filteredGroceries, setFilteredGroceries] = useState([]);
-  const [isModalVisible, setModalVisible] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {
     async function fetchGroceries() {
@@ -24,7 +21,7 @@ export default function Groceries() {
     fetchGroceries();
   }, []);
 
-  const handleSearch = ({ term }) => {
+  const handleSearch = ({ term, category, priceRange }) => {
     let results = groceries;
 
     if (term) {
@@ -32,6 +29,20 @@ export default function Groceries() {
         item.name.toLowerCase().includes(term.toLowerCase())
       );
     }
+
+    if (category) {
+      results = results.filter(
+        (item) => item.category.toLowerCase() === category.toLowerCase()
+      );
+    }
+
+    if (priceRange) {
+      const [min, max] = priceRange;
+      results = results.filter(
+        (item) => item.price >= min && item.price <= max
+      );
+    }
+
     setFilteredGroceries(results);
   };
   useEffect(() => {
@@ -47,16 +58,6 @@ export default function Groceries() {
     const filtered = filterByCategory(groceries, category);
     setFilteredGroceries(filtered);
   };
-  const handleItemClick = (item) => {
-    setSelectedItem(item);
-    setModalVisible(true);
-  };
-
-  const closeModal = () => {
-    setModalVisible(false);
-    setSelectedItem(null);
-  };
-
   return (
     <div>
       <button onClick={handleSort}>Sort by Price</button>
@@ -71,20 +72,19 @@ export default function Groceries() {
       </select>
       <h1>Groceries</h1>
       <SearchBar onSearch={handleSearch} />
-      <GroceryList items={filteredGroceries} onItemClick={handleItemClick} />
-      <Modal
-        isVisible={isModalVisible}
-        onClose={closeModal}
-        title={selectedItem?.name || "Item Details"}
-      >
-        {selectedItem && (
-          <div>
-            <p>Category: {selectedItem.category}</p>
-            <p>Price: ${selectedItem.price}</p>
-            <button>Add to Cart</button>
-          </div>
-        )}
-      </Modal>
+      <GroceryList items={filteredGroceries} />
     </div>
   );
+
 }
+
+
+// {
+//   /* onClick={ItemClick} */
+// }
+
+// function ItemClick() {
+//   const handleClick = (items) => {
+//     <Link to="/ItemPage"></Link>;
+//   };
+// }
