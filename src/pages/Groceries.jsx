@@ -5,23 +5,54 @@ import Modal from "../components/ItemDataModal";
 import { sortAscending, filterByCategory } from "../utils/groceryFunctions";
 import axios from "axios";
 import SearchBar from "../components/SearchBar";
+import api from '../config/axios';
 
 export default function Groceries() {
   const [groceries, setGroceries] = useState([]);
   const [filteredGroceries, setFilteredGroceries] = useState([]);
   const [isModalVisible, setModalVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
+  // useEffect(() => {
+  //   async function fetchGroceries() {
+  //     try {
+  //       const response = await axios.get("/dummy-data/groceries.json");
+  //       setGroceries(response.data);
+  //       setFilteredGroceries(response.data);
+  //     } catch (err) {
+  //       console.error("Something went wrong fetching groceries", err);
+  //     }
+  //   }
+  //   fetchGroceries();
+  // }, []);
   useEffect(() => {
     async function fetchGroceries() {
       try {
-        const response = await axios.get("/dummy-data/groceries.json");
+        setLoading(true);
+        // Update the endpoint to match your server route
+        const response = await api.get('/find/12pm-client-MECAZON/products');
+        // console.log(response.data)
         setGroceries(response.data);
-        setFilteredGroceries(response.data);
+        setError(null);
+        // console.log(groceries)
       } catch (err) {
-        console.error("Something went wrong fetching groceries", err);
+        console.error("Error fetching groceries:", err);
+        setError("Failed to load groceries. Please try again later.");
+      } finally {
+        setLoading(false);
       }
     }
+
+    // Try to get cached data first
+    const cachedData = sessionStorage.getItem("groceries");
+    if (cachedData) {
+      setGroceries(JSON.parse(cachedData));
+      setLoading(false);
+    }
+
+    // Fetch fresh data
     fetchGroceries();
   }, []);
 
@@ -37,7 +68,7 @@ export default function Groceries() {
   };
   useEffect(() => {
     sessionStorage.setItem("groceries", JSON.stringify(groceries));
-    console.log(JSON.parse(sessionStorage.getItem("groceries")));
+    // console.log(JSON.parse(sessionStorage.getItem("groceries")));
   }, [groceries]);
 
 
