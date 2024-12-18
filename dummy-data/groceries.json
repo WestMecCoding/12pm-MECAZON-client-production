@@ -6,7 +6,7 @@
     "stock_quantity": 150,
     "description": "A 200-page spiral notebook for school and office use.",
     "discount": 5,
-    "imgSrc": "./blue-notebook.png"
+    "imgSrc": "./MecazonProductImages/notebooks/blue-notebook.png"
   },
   {
     "item": "Ballpoint Pen Set",
@@ -15,7 +15,7 @@
     "stock_quantity": 200,
     "description": "Set of 10 smooth-writing ballpoint pens.",
     "discount": 0,
-    "imgSrc": "./"
+    "imgSrc": "./MecazonProductImages/penPack/penpack.png"
   },
   {
     "item": "Office Chair",
@@ -24,7 +24,7 @@
     "stock_quantity": 25,
     "description": "Ergonomic office chair with adjustable height and lumbar support.",
     "discount": 10,
-    "imgSrc": "./"
+    "imgSrc": "./MecazonProductImages/chair/black-chair.png"
   },
   {
     "item": "Standing Desk",
@@ -33,7 +33,7 @@
     "stock_quantity": 10,
     "description": "Height-adjustable standing desk with a spacious work surface.",
     "discount": 15,
-    "imgSrc": "./"
+    "imgSrc": "./MecazonProductImages/desks/orange-desk.png"
   },
   {
     "item": "Wireless Mouse",
@@ -42,7 +42,7 @@
     "stock_quantity": 50,
     "description": "Wireless ergonomic mouse with adjustable DPI settings.",
     "discount": 5,
-    "imgSrc": "./"
+    "imgSrc": "./MecazonProductImages/mouse/mouse.png"
   },
   {
     "item": "Mechanical Keyboard",
@@ -51,7 +51,7 @@
     "stock_quantity": 30,
     "description": "RGB mechanical keyboard with customizable keys and tactile switches.",
     "discount": 10,
-    "imgSrc": "./"
+    "imgSrc": "./MecazonProductImages/keyboards/blue-keyboard.png"
   },
   {
     "item": "Travel Backpack",
@@ -60,7 +60,7 @@
     "stock_quantity": 75,
     "description": "Water-resistant travel backpack with multiple compartments.",
     "discount": 0,
-    "imgSrc": "./"
+    "imgSrc": "./MecazonProductImages/backpacks/red-backpack.png"
   },
   {
     "item": "Carry-On Luggage",
@@ -69,7 +69,7 @@
     "stock_quantity": 20,
     "description": "Durable carry-on luggage with spinner wheels and TSA-approved locks.",
     "discount": 15,
-    "imgSrc": "./"
+    "imgSrc": "./MecazonProductImages/suitcases/yellow-suitcase.png"
   },
   {
     "item": "Snack Box Assortment",
@@ -78,7 +78,7 @@
     "stock_quantity": 100,
     "description": "A variety of snacks including chips, cookies, and nuts.",
     "discount": 0,
-    "imgSrc": "./"
+    "imgSrc": "./MecazonProductImages/peanuts/peanut.png"
   },
   {
     "item": "Board Game Set",
@@ -87,7 +87,7 @@
     "stock_quantity": 40,
     "description": "Family-friendly board game set with classic games like chess and checkers.",
     "discount": 5,
-    "imgSrc": "./"
+    "imgSrc": "./MecazonProductImages/monopoly/monopoly.png"
   },
   {
     "item": "Wireless Earbuds",
@@ -96,7 +96,7 @@
     "stock_quantity": 60,
     "description": "True wireless earbuds with noise-cancellation and long battery life.",
     "discount": 10,
-    "imgSrc": "./"
+    "imgSrc": "./MecazonProductImages/headphones/headphones.png"
   },
   {
     "item": "Desk Lamp",
@@ -105,16 +105,7 @@
     "stock_quantity": 40,
     "description": "LED desk lamp with adjustable brightness and USB charging port.",
     "discount": 5,
-    "imgSrc": "./"
-  },
-  {
-    "item": "Reusable Water Bottle",
-    "price_in_usd": 15.99,
-    "category": "Travel Supplies and Luggage",
-    "stock_quantity": 120,
-    "description": "Stainless steel insulated water bottle, keeps drinks hot or cold.",
-    "discount": 0,
-    "imgSrc": "./"
+    "imgSrc": "./MecazonProductImages/lamps/green-lamp.png"
   },
   {
     "item": "Whiteboard Markers",
@@ -123,7 +114,7 @@
     "stock_quantity": 80,
     "description": "Set of 8 colorful whiteboard markers with low odor.",
     "discount": 0,
-    "imgSrc": "./"
+    "imgSrc": "./MecazonProductImages/markers/markers.png"
   },
   {
     "item": "Filing Cabinet",
@@ -132,6 +123,6 @@
     "stock_quantity": 15,
     "description": "Lockable 3-drawer filing cabinet for office organization.",
     "discount": 10,
-    "imgSrc": "./"
+    "imgSrc": "./MecazonProductImages/filingCabinet/filingcabinet.png"
   }
 ]

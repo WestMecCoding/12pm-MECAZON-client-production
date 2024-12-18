@@ -1,22 +1,23 @@
 import React, { useState } from "react";
 import styles from "../styles/Catagories.module.css";
+import { Link } from "react-router-dom";
 
 export default function Catagories() {
   return (
     <nav>
       <ul className={styles.nav}>
-        <li>
+        <Link to="/products">
           <a href="#">Furniture</a>
-        </li>
-        <li>
+        </Link>
+        <Link to="/products">
           <a href="#">Office supplies</a>
-        </li>
-        <li>
+        </Link>
+        <Link to="/products">
           <a href="#">Travel</a>
-        </li>
-        <li>
+        </Link>
+        <Link to="/products">
           <a href="#">Electronics</a>
-        </li>
+        </Link>
       </ul>
     </nav>
   );

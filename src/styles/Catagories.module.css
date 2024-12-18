@@ -32,6 +32,7 @@ ul {
   color: black;
   text-decoration: none;
   padding: 10px 20px;
+  animation: 0.2s unhover ease-in;
 }
 
 .nav a:hover {
@@ -40,4 +41,39 @@ ul {
   text-decoration: underline;
   filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.5));
   border: 1px solid white;
+  animation: 0.2s hover ease-in;
+}
+
+@keyframes hover {
+  from {
+    background-color: #508aa5;
+    color: white;
+    text-decoration: underline;
+    filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0));
+    /* border: 1px solid white; */
+  }
+  to {
+    background-color: #0e3249;
+    color: white;
+    text-decoration: underline;
+    filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.5));
+    border: 1px solid white;
+  }
+}
+
+@keyframes unhover {
+  from {
+    background-color: #0e3249;
+    color: white;
+    text-decoration: underline;
+    filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.5));
+    border: 1px solid white;
+  }
+  to {
+    background-color: #508aa5;
+    color: white;
+    text-decoration: underline;
+    filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0));
+    /* border: 1px solid white; */
+  }
 }
