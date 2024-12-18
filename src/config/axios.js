@@ -1,9 +1,9 @@
-// src/config/axios.js
 import axios from "axios";
 
+const BASE_URL = "https://automatic-space-palm-tree-g4qr6jx5jwr9cw6pg-3000.app.github.dev";
+
 const api = axios.create({
-  // baseURL: "/dummy-data",
-  baseURL: "https://automatic-space-palm-tree-g4qr6jx5jwr9cw6pg-3000.app.github.dev/",
+  baseURL: BASE_URL,
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
@@ -29,15 +29,11 @@ api.interceptors.response.use(
   response => response,
   error => {
     if (error.response) {
-      // The request was made and the server responded with a status code
-      // that falls out of the range of 2xx
       console.error("Response error:", error.response.data);
       console.error("Status:", error.response.status);
     } else if (error.request) {
-      // The request was made but no response was received
       console.error("No response received:", error.request);
     } else {
-      // Something happened in setting up the request that triggered an Error
       console.error("Error:", error.message);
     }
     return Promise.reject(error);
