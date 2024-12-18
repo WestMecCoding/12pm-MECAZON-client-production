@@ -1,143 +1,19 @@
 export default function Box() {
   return (
-    <svg
-      height="50"
-      viewBox="0 0 184 186"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M4.85632 38.7449L91.9683 3.00006"
-        stroke="#508AA5"
-        stroke-width="6.142"
-        stroke-linecap="round"
-      />
-      <path
-        d="M4.85632 38.7449L91.9683 3.00006"
-        stroke="#508AA5"
-        stroke-width="6.142"
-        stroke-linecap="round"
-      />
-      <path
-        d="M179.589 38.9536L91.9685 3.00007"
-        stroke="#508AA5"
-        stroke-width="6.1599"
-        stroke-linecap="round"
-      />
-      <path
-        d="M179.589 38.9536L91.9685 3.00007"
-        stroke="#508AA5"
-        stroke-width="6.1599"
-        stroke-linecap="round"
-      />
-      <path
-        d="M4.85632 146.255L91.9683 182"
-        stroke="#508AA5"
-        stroke-width="6.142"
-        stroke-linecap="round"
-      />
-      <path
-        d="M4.85632 146.255L91.9683 182"
-        stroke="#508AA5"
-        stroke-width="6.142"
-        stroke-linecap="round"
-      />
-      <path
-        d="M179.132 146.234L91.9684 182"
-        stroke="#508AA5"
-        stroke-width="6.14381"
-        stroke-linecap="round"
-      />
-      <path
-        d="M179.132 146.234L91.9684 182"
-        stroke="#508AA5"
-        stroke-width="6.14381"
-        stroke-linecap="round"
-      />
-      <path
-        d="M4.85034 40.2659L91.9684 76.0132"
-        stroke="#508AA5"
-        stroke-width="6.14221"
-        stroke-linecap="round"
-      />
-      <path
-        d="M4.85034 40.2659L91.9684 76.0132"
-        stroke="#508AA5"
-        stroke-width="6.14221"
-        stroke-linecap="round"
-      />
-      <path
-        d="M179.138 40.2448L91.9684 76.0131"
-        stroke="#508AA5"
-        stroke-width="6.14402"
-        stroke-linecap="round"
-      />
-      <path
-        d="M179.138 40.2448L91.9684 76.0131"
-        stroke="#508AA5"
-        stroke-width="6.14402"
-        stroke-linecap="round"
-      />
-      <path
-        d="M4.7345 58.4716L91.9684 94.2664"
-        stroke="#508AA5"
-        stroke-width="6.14629"
-        stroke-linecap="round"
-      />
-      <path
-        d="M4.7345 58.4716L91.9684 94.2664"
-        stroke="#508AA5"
-        stroke-width="6.14629"
-        stroke-linecap="round"
-      />
-      <path
-        d="M179.254 58.4506L91.9684 94.2665"
-        stroke="#508AA5"
-        stroke-width="6.1481"
-        stroke-linecap="round"
-      />
-      <path
-        d="M179.254 58.4506L91.9684 94.2665"
-        stroke="#508AA5"
-        stroke-width="6.1481"
-        stroke-linecap="round"
-      />
-      <path
-        d="M180.64 145.537L180.64 39.463"
-        stroke="#508AA5"
-        stroke-width="6.20709"
-        stroke-linecap="round"
-      />
-      <path
-        d="M180.64 145.537L180.64 39.463"
-        stroke="#508AA5"
-        stroke-width="6.20709"
-        stroke-linecap="round"
-      />
-      <path
-        d="M91.9685 182L91.9685 97.4723"
-        stroke="#508AA5"
-        stroke-width="6.20709"
-        stroke-linecap="round"
-      />
-      <path
-        d="M91.9685 182L91.9685 97.4723"
-        stroke="#508AA5"
-        stroke-width="6.20709"
-        stroke-linecap="round"
-      />
-      <path
-        d="M3.29724 145.537L3.29724 39.463"
-        stroke="#508AA5"
-        stroke-width="6.20709"
-        stroke-linecap="round"
-      />
-      <path
-        d="M3.29724 145.537L3.29724 39.463"
-        stroke="#508AA5"
-        stroke-width="6.20709"
-        stroke-linecap="round"
-      />
-    </svg>
+<svg height="50" viewBox="0 0 127 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="box">
+<path id="Vector 68" d="M6.02856 27.9646L63.4999 5.00006" stroke="#508AA5" stroke-width="10" stroke-linecap="round"/>
+<path id="Vector 69" d="M121.307 28.0986L63.5 4.99999" stroke="#508AA5" stroke-width="10" stroke-linecap="round"/>
+<path id="Vector 72" d="M6.02856 97.0354L63.4999 120" stroke="#508AA5" stroke-width="10" stroke-linecap="round"/>
+<path id="Vector 73" d="M121.005 97.0217L63.4999 120" stroke="#508AA5" stroke-width="10" stroke-linecap="round"/>
+<path id="Vector 74" d="M6.02466 28.9417L63.4999 51.9078" stroke="#508AA5" stroke-width="5" stroke-linecap="round"/>
+<path id="Vector 75" d="M121.009 28.9282L63.4999 51.9079" stroke="#508AA5" stroke-width="5" stroke-linecap="round"/>
+<path id="Vector 76" d="M5.94818 40.6382L63.4999 63.6349" stroke="#508AA5" stroke-width="5" stroke-linecap="round"/>
+<path id="Vector 77" d="M121.086 40.6248L63.4999 63.635" stroke="#508AA5" stroke-width="5" stroke-linecap="round"/>
+<path id="Vector 70" d="M122 96.5742L122 28.4261" stroke="#508AA5" stroke-width="10" stroke-linecap="round"/>
+<path id="Vector 78" d="M63.5 120L63.5 65.6945" stroke="#508AA5" stroke-width="5" stroke-linecap="round"/>
+<path id="Vector 71" d="M5 96.5742L5 28.4261" stroke="#508AA5" stroke-width="10" stroke-linecap="round"/>
+</g>
+</svg>
   );
 }

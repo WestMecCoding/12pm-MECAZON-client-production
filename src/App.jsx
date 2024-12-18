@@ -10,6 +10,8 @@ import Product from "./pages/Product";
 import LogIn from "./pages/LogIn";
 import SignUp from "./pages/SignUp";
 import EmployeeLogIn from "./pages/EmployeeLogIn";
+import Cart from "./pages/Cart";
+
 export default function App() {
     return (
       <div>
@@ -22,8 +24,9 @@ export default function App() {
             <Route path="/log-in" element={<LogIn />} />
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/Employee-log-in" element={<EmployeeLogIn />} />
+            <Route path="/cart" element={<Cart></Cart>}/>
           </Routes>
-            <Body />
+            {/* <Body /> */}
             <Footer />
         </Router>
       </div>

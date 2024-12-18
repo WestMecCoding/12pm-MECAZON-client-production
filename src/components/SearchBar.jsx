@@ -13,7 +13,7 @@ export default function SearchBar({ onSearch }) {
   };
 
   return (
-    <div>
+    <div className={Styles.container}>
       <input
         type="text"
         value={searchTerm}

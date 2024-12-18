@@ -1,11 +1,37 @@
+.container {
+  width: 100%;
+}
+
 input {
-  width: 100vw;
+  width: 90%;
   height: 2.5%;
   padding: 2%;
   margin: 5vw;
   border-radius: 40px;
+  animation: 0.2s shrink ease-in;
+  filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.5));
 }
 
 input:hover {
   filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 1));
+  animation: 0.2s expand ease-in;
+  width: 100%;
+}
+
+@keyframes expand {
+  from {
+    width: 90%
+  }
+  to {
+    width: 100%
+  }
+}
+
+@keyframes shrink {
+  from {
+    width: 100%
+  }
+  to {
+    width: 90%
+  }
 }

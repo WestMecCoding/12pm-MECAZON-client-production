@@ -1,7 +1,7 @@
 .nav {
-    background-color: #0e3249;
+  background-color: #0e3249;
   height: 10vh;
-    padding: 1rem 0.5rem;
+  padding: 1rem 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,55 @@
 }
 
 .nav a {
-    color: #fff;
-    margin-right: 1rem;
-    text-decoration: none;
+  color: #fff;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.subTitle {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  padding-top: 10%;
+  filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.5));
+  animation: 0.2s shrink ease-in;
+}
+
+.subTitle:hover {
+  /* font-size: 0.8rem; */
+  text-decoration: underline;
+  border-radius: 10px;
+  padding-top: 5%;
+  filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 1));
+  animation: 0.2s expand ease-in;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+
+/* hide bar and simple logo */
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 1024px) {
+}
+
+@keyframes expand {
+  from {
+    padding-left: 0vw;
+    padding-right: 0vw;
+  }
+  to {
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+  }
+}
+
+@keyframes shrink {
+  from {
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+  }
+  to {
+    padding-left: 0vw;
+    padding-right: 0vw;
+  }
 }
