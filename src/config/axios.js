@@ -2,8 +2,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "/dummy-data",
-  // baseURL: "${literate_space_funicular:+https://${literate_space_funicular}-3000.app.github.dev}${literate_space_funicular:-http://localhost:3000}",
+  // baseURL: "/dummy-data",
+  baseURL: "https://automatic-space-palm-tree-g4qr6jx5jwr9cw6pg-3000.app.github.dev/",
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
