@@ -47,6 +47,30 @@
   font-size: 3rem;
 }
 
+.wrap {
+  width: 500px;
+  height: 20px;
+
+  display: flex;
+  justify-self: center;
+
+  margin-bottom: 20px;
+
+}
+.priceButton {
+  line-height: 0%;
+
+  height: 20px;
+  padding: 10px;
+
+  border-radius: 5px;
+}
+
+.space {
+  width: 10px;
+  margin: 30px;
+}
+
 @keyframes shrink {
   from {
     width: calc(70% - 1rem);

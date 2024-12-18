@@ -10,6 +10,7 @@ import Box from "./Box.jsx";
 // import Menu from "./Menu";
 
 export default function Navbar() {
+  
   return (
     <>
       <nav className={styles.nav}>

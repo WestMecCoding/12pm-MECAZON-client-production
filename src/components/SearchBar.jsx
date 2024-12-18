@@ -3,7 +3,7 @@ import Styles from "../styles/SearchBar.module.css";
 
 export default function SearchBar({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState("");
-
+  
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       onSearch({
@@ -11,7 +11,7 @@ export default function SearchBar({ onSearch }) {
       });
     }
   };
-
+  
   return (
     <div className={Styles.container}>
       <input
@@ -21,7 +21,7 @@ export default function SearchBar({ onSearch }) {
         onKeyDown={handleKeyPress}
         placeholder="Search by name..."
         className={Styles.input}
-      />
+        />
     </div>
   );
 }

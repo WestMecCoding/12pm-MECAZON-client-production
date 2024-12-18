@@ -29,8 +29,8 @@ export default function Groceries() {
     let results = groceries;
 
     if (term) {
-      results = results.filter((item) =>
-        item.name.toLowerCase().includes(term.toLowerCase())
+      results = results.filter(item =>
+        item.item.toLowerCase().includes(term.toLowerCase())
       );
     }
     setFilteredGroceries(results);
@@ -61,18 +61,20 @@ const handleCategoryFilter = (category) => {
 
   return (
     <div>
-      <button onClick={handleSort}>Sort by Price</button>
+      <h1 className={styles.header}>Result of Search:</h1>
+      <div className={styles.wrap}>
+        <button className={styles.priceButton} onClick={handleSort}>Sort by Price</button>
       <select onChange={(e) => handleCategoryFilter(e.target.value)}>
         <option value="all">All Items</option>
-        <option value="dairy">Dairy Products</option>
-        <option value="vegetables">Vegetable Products</option>
-        <option value="proteins">Protein Products</option>
-        <option value="fruits">Fruit Products</option>
-        <option value="nuts">Nut Products</option>
-        <option value="grains">Grain Products</option>
+        <option value="Educational Supplies">Educational Supplies</option>
+        <option value="Office Furniture">Office Furniture</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Travel Supplies and Luggage">Travel Supplies and Luggage</option>
       </select>
-      <h1 className={styles.header}>Result of Search:</h1>
+      
+      </div>
       <SearchBar onSearch={handleSearch} />
+      <div className={styles.space}></div>
       <GroceryList items={filteredGroceries} onItemClick={handleItemClick} />
       <Modal
         isVisible={isModalVisible}
